@@ -19,7 +19,7 @@ const Banner = () => {
   return (
     <div>
         {/* banner */}
-      <div className='w-full lg:h-[910px] h-[750px] bg-black'>
+      <div className='w-full lg:h-[910px] h-[750px] md:h-[1150px] bg-black'>
         <div className='overflow-hidden'>
                   <img src={banner1} alt="" className='w-full h-full object-cover absolute ' />
         </div>

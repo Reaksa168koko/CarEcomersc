@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Categories = () => {
 
   return (
-    <div className=' lg:w-full  lg:h-auto  bg-black lg:p-8 flex flex-wrap lg:gap-4 gap-3 '>
+    <div className=' lg:w-full  lg:h-auto  bg-black lg:p-8 flex flex-wrap lg:gap-4 md:gap-2 gap-3  '>
        {cars.map((p)=>(
-         <div key={p.id} className=' lg:w-[32%] md:w-[46%] w-full lg:h-[500px] md:h-[550px] h-[450px] bg-black group  rounded-xl  border border-white p-2 flex flex-wrap hover:border-red-500 transition-all duration-300 ease-in-out group mx-4 lg:mx-1'>
+         <div key={p.id} className=' lg:w-[32%] md:w-[45%] w-full lg:h-[500px] md:mt-4 md:h-[550px] h-[450px] bg-black group  rounded-xl  border border-white p-2 flex flex-wrap hover:border-red-500 transition-all duration-300 ease-in-out group mx-4 lg:mx-1'>
             <div className='w-full h-[50%] bg-pink-300 overflow-hidden rounded-xl'>
                 <img src={p.image} alt="" className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300 ease-in-out ' />
             </div>

@@ -72,45 +72,45 @@ const Navbar= () => {
             </div>
     </div>
         {/* opensibarright */}
-       <div className={`lg:w-[400px] w-[80%] h-screen fixed top-0 bg-black ${OpenShop ? "translate-x-0" :"translate-x-full" } right-0 transition duration-300 ease-in-out z-50`}   >
-            <div className='h-[70px] flex items-center justify-between bg-white'>
-              <h1 className='text-black  text-2xl px-3'>Your <span className='text-rose-500'>Order</span></h1>
-              <IoMdClose onClick={()=>Isopenshop(false)}  className='text-4xl mx-2 cursor-pointer'/>
+     
+   <div className={`lg:w-[400px] w-[80%] h-screen fixed top-0 bg-black ${OpenShop ? "translate-x-0" :"translate-x-full" } right-0 transition duration-300 ease-in-out z-50`}   >
+              <div className='h-[70px] flex items-center justify-between bg-white'>
+                <h1 className='text-black  text-2xl px-3'>Your <span className='text-rose-500'>Order</span></h1>
+                <IoMdClose onClick={()=>Isopenshop(false)}  className='text-4xl mx-2 cursor-pointer'/>
+              </div>
+              <div className="p-3 space-y-3">
+              {cart.length === 0 ? (
+                <p className="text-gray-400 text-center mt-4">Your cart is empty.</p>
+              ) : (
+                cart.map((cars, index) => (
+                  <div
+                    key={index}
+                    className="w-full h-[90px] flex border border-white rounded-md overflow-hidden"
+                  >
+                    {/* image */}
+                    <div className="w-[30%] h-full">
+                      <img
+                        src={cars.image}
+                        alt={cars.model}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* details */}
+                    <div className="flex-1 px-3 mt-2">
+                      <h1 className="text-white text-lg font-bold">{cars.model}</h1>
+                      <p className="text-red-500 font-semibold">${cars.price}</p>
+                    </div>
+                    {/* delete button */}
+                    <div className="flex items-center">
+                      <button onClick={()=>removeFromCart(cars.id)} className="text-sm font-bold text-white px-3 py-2 rounded-md bg-red-500 hover:bg-red-600 mx-2">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
             </div>
-            <div className="p-3 space-y-3">
-            {cart.length === 0 ? (
-              <p className="text-gray-400 text-center mt-4">Your cart is empty.</p>
-            ) : (
-              cart.map((cars, index) => (
-                <div
-                  key={index}
-                  className="w-full h-[90px] flex border border-white rounded-md overflow-hidden"
-                >
-                  {/* image */}
-                  <div className="w-[30%] h-full">
-                    <img
-                      src={cars.image}
-                      alt={cars.model}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* details */}
-                  <div className="flex-1 px-3 mt-2">
-                    <h1 className="text-white text-lg font-bold">{cars.model}</h1>
-                    <p className="text-red-500 font-semibold">${cars.price}</p>
-                  </div>
-                  {/* delete button */}
-                  <div className="flex items-center">
-                    <button onClick={()=>removeFromCart(cars.id)} className="text-sm font-bold text-white px-3 py-2 rounded-md bg-red-500 hover:bg-red-600 mx-2">
-                      Delete
-                    </button>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-    </div>
-
+      </div>
     </div>
   )
 }
