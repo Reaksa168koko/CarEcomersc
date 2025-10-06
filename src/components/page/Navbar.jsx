@@ -15,7 +15,7 @@ const Navbar= () => {
     const {cart,removeFromCart} = useContext(CartContext);
 
   return (
-    
+
     <div className='w-full h-auto bg-black'>
        <div className='lg:w-full lg:h-[70px]  bg-black/80 backdrop:blur-md flex sticky  top-0 z-50  '>
             {/* logo */}

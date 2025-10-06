@@ -12,6 +12,7 @@ import ProSUVs from './components/ProductCategory/ProSUVs'
 import ProElectric from './components/ProductCategory/ProElectric'
 import ProSportsCars from './components/ProductCategory/ProSportsCars'
 import ProDuctluxary from './components/ProductCategory/proDuctluxary'
+import LuxurySedansdetail from './components/Detailproduct/LuxurySedansdetail'
 
 const App = () => {
   return (
@@ -33,9 +34,10 @@ const App = () => {
 
         {/* Dynamic car detail route */}
         <Route path="/car/:id" element={<TestlaSplaid />} />
+        <Route path='/luxary/:id' element={<LuxurySedansdetail/>}/>
         {/* product */}
          <Route path='/Sports' element={<ProSportsCars/>}/>
-         <Route path='/luxary' element={<ProDuctluxary/>}/>
+         <Route path='/luxary/' element={<ProDuctluxary/>}/>
          <Route path='/SUVs' element={<ProSUVs/>}/>
          <Route path='/Electric' element={<ProElectric/>}/>
       </Routes>

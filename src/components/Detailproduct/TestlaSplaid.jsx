@@ -20,7 +20,7 @@ const TestlaSplaid = () => {
     
     <div className='w-full h-auto flex justify-center items-center py-40'>
       
-       <div className='w-[70%] h-[500px]  flex  rounded-xl bg-black  '>
+       <div className='lg:w-[70%] w-[300px] lg:h-[500px] h-[400px ] flex  rounded-xl bg-black  '>
         {/* image */}
         <div className='w-1/2 h-full  overflow-hidden  rounded-xl'>
               <img src={car.image} alt="" className='w-full h-full object-cover rounded-xl hover:scale-104 transition-all duration-300 ease-in-out'/>
