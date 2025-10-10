@@ -28,14 +28,11 @@ const Banner = () => {
               <div className='w-full h-full flex justify-center flex-col'>
                <h1 className=' lg:text-6xl text-5xl text-white font-bold '>THIS VEHICLE CAN BE ANYTHING.</h1>
                 <span ref={el} className="text-white text-2xl lg:text-4xl font-bold mt-4"></span>
-               
               <p className=' text-white lg:text-4xl text-3xl mt-4 '>EVEN AN SUV.</p>
               <p className='font-bold text-white mt-4 lg:text-xl'>Reserve now for <span className='text-rose-500'>$50</span> and lock your spot.</p>
                <button className='uppercase lg:px-4 mt-3 lg:py-3 py-2  bg-red-500 rounded-md text-white font-bold hover:bg-red-400
                  transition duration-300 ease-in-out text-xl hover:shadow-xl hover:translate-y-2 shadow-white' >reserve</button>
               </div>
-            
-           
           </div>
       </div>
     </div>

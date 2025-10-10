@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const ProDuctluxary = () => {
   return (
-    <div className='w-full h-auto'> 
-    <h1 className='flex justify-center items-center font-bold  mt-7 text-5xl '>LuxaryCar</h1>
+    <div className='w-full h-auto bg-black'> 
+    <h1 className='flex justify-center items-center font-bold  py-6 text-5xl text-white'>LuxaryCar</h1>
        <div className='flex flex-wrap p-8'>
          {luxaryCars.map((l)=>(
             <div key={l.id} className=' lg:w-[32%] md:w-[45%] w-full lg:h-[500px] md:mt-4 md:h-[550px] h-[450px] bg-black group  rounded-xl  border  border-white p-2 flex flex-wrap hover:border-red-500 transition-all duration-300 ease-in-out group mx-4 lg:mx-1'>

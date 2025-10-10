@@ -147,6 +147,15 @@ export const products = [
 //product
 // data.js
 // Example data for products
+import lux1 from './assets/image/luxcar1.jpg'
+import lux2 from './assets/image/luxcar2.jpg'
+import lux3 from './assets/image/luxcar3.jpg'
+import lux4 from './assets/image/luxcar4.jpg'
+import lux5 from './assets/image/luxcar5.jpg'
+import lux6 from './assets/image/luxcar6.jpg'
+import lux7 from './assets/image/luxcar7.jpg'
+import lux8 from './assets/image/luxcar8.jpg'
+import lux9 from './assets/image/luxcar9.jpg'
 
 export const luxaryCars = [
 {
@@ -159,6 +168,7 @@ feature1: "Autopilot",
 feature2: "Premium Interior",
 feature3: "Ludicrous Mode",
 link: "/car/1",
+image : lux1,
 description:
 "The 2024 Mercedes-AMG GT 63 S combines luxury and raw power. With a handcrafted engine, advanced driver assist, and a refined interior, it delivers elegance and thrilling performance."
 },
@@ -172,6 +182,7 @@ feature1: "Autopilot",
 feature2: "Sport Wheels",
 feature3: "Premium Audio",
 link: "/car/2",
+image : lux2,
 description:
 "The Porsche 911 Turbo S blends iconic design with modern tech. Its powerful performance, premium cockpit, and instant acceleration redefine driving excitement."
 },
@@ -185,6 +196,7 @@ feature1: "Falcon Wing Doors",
 feature2: "7 Seats",
 feature3: "Autopilot",
 link: "/car/3",
+image : lux3,
 description:
 "The BMW iX xDrive50 is a futuristic SUV with bold design. Spacious, luxurious, and packed with advanced tech, it’s perfect for families and adventurers."
 },
@@ -198,6 +210,7 @@ feature1: "Autopilot",
 feature2: "Panoramic Roof",
 feature3: "All-Wheel Drive",
 link: "/car/4",
+image : lux4,
 description:
 "The Tesla Model S Plaid offers record-breaking speed with zero compromise. Its sleek design, luxury interior, and cutting-edge autopilot make every ride unforgettable."
 },
@@ -211,6 +224,7 @@ feature1: "Exoskeleton Design",
 feature2: "Vault Storage",
 feature3: "All-Terrain",
 link: "/car/5",
+image : lux5,
 description:
 "The Audi e-tron GT is bold, stylish, and electrifying. With its sporty lines, premium interior, and seamless performance, it makes a strong statement on the road."
 },
@@ -224,6 +238,7 @@ feature1: "Supercar Speed",
 feature2: "Glass Roof",
 feature3: "SpaceX Package",
 link: "/car/6",
+image : lux6,
 description:
 "The 2024 Range Rover Sport delivers luxury with power. Combining off-road capability, premium comfort, and cutting-edge tech, it commands attention anywhere."
 },
@@ -237,6 +252,7 @@ feature1: "V10 Engine",
 feature2: "Race Mode",
 feature3: "Carbon Fiber Trim",
 link: "/car/7",
+image : lux7,
 description:
 "The Lamborghini Huracan EVO is designed for pure adrenaline. With sharp handling, explosive acceleration, and an unmistakable design, it’s a supercar icon."
 },
@@ -250,9 +266,24 @@ feature1: "Launch Control",
 feature2: "Premium Cockpit",
 feature3: "Sport Exhaust",
 link: "/car/8",
+image : lux8,
 description:
 "The Ferrari Roma embodies Italian elegance with thrilling performance. Sleek, powerful, and luxurious, it’s the ultimate grand tourer."
-}
+},
+{
+  id: 9,
+  model: "Bentley Continental GT Speed",
+  year: 2024,
+  mileage: "0",
+  price: 274900,
+  feature1: "W12 Engine",
+  feature2: "All-Wheel Drive",
+  feature3: "Handcrafted Interior",
+  link: "/car/13",
+  image : lux9,
+  description:
+    "The Bentley Continental GT Speed combines elegance with brute force. Its handcrafted luxury and immense power create an unforgettable driving experience."
+},
 
 ];
 

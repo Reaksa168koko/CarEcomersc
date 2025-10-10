@@ -13,6 +13,7 @@ import ProElectric from './components/ProductCategory/ProElectric'
 import ProSportsCars from './components/ProductCategory/ProSportsCars'
 import ProDuctluxary from './components/ProductCategory/proDuctluxary'
 import LuxurySedansdetail from './components/Detailproduct/LuxurySedansdetail'
+import Footer from './components/page/Footer'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
               <Content />
               <Categories />
               <Products/>
+              <Footer/>
             </div>
           }
         />
