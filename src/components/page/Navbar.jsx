@@ -6,6 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import {  menu } from '../../Data';
 import { useContext, useState } from "react";
 import { CartContext } from "../../CartContext";
+import { IoMdCloseCircle } from "react-icons/io";
 
 
 
@@ -13,7 +14,7 @@ const Navbar= () => {
     const [Opensearch,Isopensearch] = useState(false);
     const [OpenShop,Isopenshop] = useState(false);
     const {cart,removeFromCart} = useContext(CartContext);
-
+    const [opendrop,isdrop] = useState(false);
   return (
 
     <div className='w-full h-auto bg-black'>
@@ -35,7 +36,7 @@ const Navbar= () => {
             {/* icon */}
             <div className='lg:w-1/3 lg:h-full flex justify-center items-center '> 
               <div className='flex gap-5 mx-2 '>
-              <IoSearchOutline className='text-white text-2xl hover:text-red-400' />
+              <IoSearchOutline onClick={()=> isdrop(!opendrop)} className='text-white text-2xl hover:text-red-400' />
               <FaRegUser onClick={()=>Isopensearch(!Opensearch)}  className='text-white text-2xl hover:text-red-400' />
              <div className="relative inline-block">
                {/* Cart icon */}
@@ -111,12 +112,34 @@ const Navbar= () => {
             </div>
       </div>
       {/* search */}
-      <div className=" top-0 fixed mt-[300px] z-50"  >
-        <div className="p-3 bg-white w-[80%]">
-               <input type="text" className="w-full " placeholder="Search" />
-        </div>
-           
-      </div>
+    <div
+  className={`
+    w-full top-0 fixed z-50 flex justify-center items-center -mt-15
+    transition-all duration-400 ease-in-out
+    ${opendrop ? "translate-y-0" : "-translate-y-full"}
+  `}
+>
+  <div
+    className={`
+      p-6 bg-white w-[80%] mt-[140px] rounded-md flex justify-between
+      shadow-white shadow-2xl border-0 outline-0
+    `}
+  >
+      <input
+        type="text"
+        className="w-full border-0 outline-0 relative text-xl font-bold text-black"
+        placeholder="Search"
+      />
+  
+    <div>
+      <IoMdCloseCircle
+        onClick={() =>isdrop(false)}
+        className="absolute text-4xl -mx-5 -mt-1 cursor-pointer"
+      />
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }

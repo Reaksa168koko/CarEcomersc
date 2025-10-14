@@ -7,13 +7,14 @@ import Content from './components/page/content'
 import Categories from './components/page/Categories'
 import TestlaSplaid from './components/Detailproduct/TestlaSplaid'
 import Products from './components/page/Products'
-import SportsCarsdetail from './components/Detailproduct/SportsCarsdetail'
 import ProSUVs from './components/ProductCategory/ProSUVs'
 import ProElectric from './components/ProductCategory/ProElectric'
 import ProSportsCars from './components/ProductCategory/ProSportsCars'
-import ProDuctluxary from './components/ProductCategory/proDuctluxary'
 import LuxurySedansdetail from './components/Detailproduct/LuxurySedansdetail'
 import Footer from './components/page/Footer'
+import ProductLuxery from './components/ProductCategory/ProductLuxery'
+
+
 
 const App = () => {
   return (
@@ -39,7 +40,7 @@ const App = () => {
         <Route path='/luxary/:id' element={<LuxurySedansdetail/>}/>
         {/* product */}
          <Route path='/Sports' element={<ProSportsCars/>}/>
-         <Route path='/luxary/' element={<ProDuctluxary/>}/>
+         <Route path='/luxary/' element={<ProductLuxery/>}/>
          <Route path='/SUVs' element={<ProSUVs/>}/>
          <Route path='/Electric' element={<ProElectric/>}/>
       </Routes>

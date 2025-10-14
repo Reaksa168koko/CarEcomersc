@@ -2,7 +2,7 @@ import React from 'react'
 import { luxaryCars } from '../../Data'
 import { Link } from 'react-router-dom'
 
-const ProDuctluxary = () => {
+function ProductLuxery() {
   return (
     <div className='w-full h-auto bg-black'> 
     <h1 className='flex justify-center items-center font-bold  py-6 text-5xl text-white'>LuxaryCar</h1>
@@ -39,4 +39,4 @@ const ProDuctluxary = () => {
   )
 }
 
-export default ProDuctluxary
+export default ProductLuxery
