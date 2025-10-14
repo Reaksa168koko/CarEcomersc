@@ -35,10 +35,11 @@ const Navbar= () => {
             {/* icon */}
             <div className='lg:w-1/3 lg:h-full flex justify-center items-center '> 
               <div className='flex gap-5 mx-2 '>
-              <IoSearchOutline onClick={()=>Isopensearch(!Opensearch)} className='text-white text-2xl hover:text-red-400' />
-              <FaRegUser className='text-white text-2xl hover:text-red-400' />
+              <IoSearchOutline className='text-white text-2xl hover:text-red-400' />
+              <FaRegUser onClick={()=>Isopensearch(!Opensearch)}  className='text-white text-2xl hover:text-red-400' />
              <div className="relative inline-block">
                {/* Cart icon */}
+
                 <FiShoppingCart onClick={()=>Isopenshop(!OpenShop)} className="text-white text-2xl hover:text-red-400" />
 
                 {/* Badge */}
@@ -46,8 +47,6 @@ const Navbar= () => {
                   {cart.length}
                 </span>
               </div>
-
-   
               </div>
             </div>
        </div>   
@@ -110,6 +109,13 @@ const Navbar= () => {
                 ))
               )}
             </div>
+      </div>
+      {/* search */}
+      <div className=" top-0 fixed mt-[300px] z-50"  >
+        <div className="p-3 bg-white w-[80%]">
+               <input type="text" className="w-full " placeholder="Search" />
+        </div>
+           
       </div>
     </div>
   )
