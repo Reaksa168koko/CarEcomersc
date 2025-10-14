@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Content = () => {
+const Tent = () => {
   return (
     <div  className='lg:w-full lg:h-[200px]  bg-black mt-20'>
         <div className='w-full h-full flex items-center justify-center flex-col'>
@@ -13,4 +13,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Tent
