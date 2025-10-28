@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { cars } from '../../Data'
 import { Link } from 'react-router-dom'
 
 const Categories = () => {
+
+
+
 
   return (
     <div className=' lg:w-full  lg:h-auto  bg-black lg:p-8 flex flex-wrap lg:gap-4 md:gap-2 gap-3  '>

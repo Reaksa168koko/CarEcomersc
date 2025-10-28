@@ -12,7 +12,7 @@ const Products = () => {
        <div className='flex flex-wrap lg:w-full lg:gap-5 md:gap-4'>
              {products.map((c)=>(
         
-                 <div onClick={()=>navigate(c.link)} key={c.id} className='lg:w-[24%] lg:h-[300px] w-full h-[300px]   lg:mt-15 mt-3 rounded-md p-2 border-1 group border-white hover:border-red-500 transition-all duration-300'>
+         <div onClick={()=>navigate(c.link)} key={c.id} className='lg:w-[24%] lg:h-[300px] w-full h-[300px]   lg:mt-15 mt-3 rounded-md p-2 border-1 group border-white hover:border-red-500 transition-all duration-300'>
            <div className='overflow-hidden h-[50%] w-full '>
               <img src={c.image} alt="" className='w-full h-full object-cover rounded-md group-hover:scale-105 transition-all duration-300 ease-in-out' />
            </div>

@@ -142,7 +142,7 @@ export const products = [
   }
 ];
 
-
+    
 
 //product
 // data.js
@@ -156,6 +156,7 @@ import lux6 from './assets/image/luxcar6.jpg'
 import lux7 from './assets/image/luxcar7.jpg'
 import lux8 from './assets/image/luxcar8.jpg'
 import lux9 from './assets/image/luxcar9.jpg'
+import { HiH1 } from 'react-icons/hi2'
 
 export const luxaryCars = [
 {
